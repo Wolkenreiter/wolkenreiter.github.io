@@ -1,0 +1,215 @@
+/* app css stylesheet */
+
+.credits{
+    font-weight: lighter;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.hint{
+    font-weight: lighter;
+    font-size: 11pt;
+    margin: 0;
+    margin-top: 7px;
+    margin-left:20px;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    line-height: 200%;
+    font-size: 12pt;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+h2 {
+    margin-left: 40px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color:lightgray;
+  height: 1px;
+}
+
+form {
+    padding: 20px 0;
+}
+
+input /*, label */{
+    height: 1.5em;
+    padding-left: 10px;
+}
+
+select, input {
+    outline: 0;
+    border-radius: 6px;
+    border: thin solid #999999;
+}
+
+select:focus, input:focus
+{
+    border-radius: 6px;
+    border: thin solid #c6d0ed;
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4); 
+    -moz-box-shadow: 0px 1px 6px rgba(23, 69, 88, .5);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+}
+
+.svg-icon{
+    vertical-align: middle;
+}
+
+select {
+    height: 1.66em;
+    padding: 0 10px;
+}
+.eng-comp-lbl {
+    text-align: center;
+}
+
+.eng-mat-lbl {
+    display: block;
+    text-align: center;
+}
+
+div.ship-component-header {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0;
+}
+
+div.engine-list-entry-body {
+    padding: 10px 10px;
+    margin: 0 0;
+    -moz-transition: height .5s;
+    -ms-transition: height .5s;
+    -o-transition: height .5s;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+    overflow: hidden;
+}
+
+div.engine-list-footer {
+    vertical-align: middle;
+    text-align: center;
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px;
+    margin: 10px 10px;
+}
+
+div.ship-schem-editor-comp-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.engine-set-editor-footer {
+    flex: 1;
+    padding: 0 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14pt;
+    justify-content: center;
+}
+
+div.engine-set-editor-footer > div {
+    flex: 0.33;
+    width:33%;
+    display: block;
+    text-align: center;
+    border-top: thin solid lightgray;
+    /*border-bottom: thin solid lightgray; */
+}
+
+.engine-schem-editor-row {
+    display:flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+}
+
+.ship-schem-editor-comp-group {
+    flex: 1;
+    min-width: 50px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.ship-schem-editor-comp-group > input {
+    margin: 0 5px 0;
+    box-sizing: border-box; 
+    width: 100px;
+}
+
+.ship-component-box-outer {
+    margin: 10px 10px 0;
+    background: #f6f8f9; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    box-shadow: 0 2px 10px lightgrey;
+    border-radius: 12px;
+    padding: 10px;
+    padding-top: 5px;
+}
+
+.ship-component-tab {
+    width: auto;
+    vertical-align: bottom; 
+    border-top-left-radius: 12px; 
+    border-top-right-radius: 12px; 
+    margin: 0;
+    margin-top: 5px;
+    padding: 7px 10px;
+    background-color: rgba(255,555,255,0.8);
+}
+
+.ship-component-box-inner {
+    padding: 10px 10px;
+    margin: 0 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: rgba(255,555,255,0.8);
+ }
+
+ .full-border {
+     border-radius: 12px;
+ }
+
+ .space-above {
+     margin-top: 10px;
+ }
+ 
+.stat-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 20px;
+}
+
+.stat-row  > div {
+    display: block;
+    flex: 0.25;
+    text-align: center;
+    font-size: 14pt;
+}
+
+h2.stat-block-header {
+    font-weight:normal;
+    margin: 5px;
+    margin-left: 20px;
+    font-size: 14pt;
+}
+

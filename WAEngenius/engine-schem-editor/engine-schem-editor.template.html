@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div class="engine-list-entry-body" style="display: flex; flex-direction: column; border-bottom:thin solid lightgray;">
+    <!--div style="padding:0;margin:auto;">Name</div-->
+    <div class="engine-schem-editor-row">
+        <div class="ship-schem-editor-comp-group">
+            Case<input ng-change="$ctrl.updateEngineSchem()" ng-model="$ctrl.engineSchemData.name.case"/>
+        </div>
+        <div class="ship-schem-editor-comp-group">
+            Head<input ng-change="$ctrl.updateEngineSchem()" ng-model="$ctrl.engineSchemData.name.head"/>
+        </div>
+        <div class="ship-schem-editor-comp-group">
+            Propeller<input ng-change="$ctrl.updateEngineSchem()" ng-model="$ctrl.engineSchemData.name.prop"/>
+        </div>
+        <div class="ship-schem-editor-comp-group">
+            Number<input type="number" ng-change="$ctrl.updateEngineSchem()" ng-model="$ctrl.engineSchemData.name.number"/>
+        </div>
+    </div>
+    <hr>
+    <!--div style="margin:auto">Base Stats</div-->
+    <div class="engine-schem-editor-row">
+        <div class="ship-schem-editor-comp-group">
+            Power
+            <input type="number" ng-change="$ctrl.updateEngineSchem()" ng-model="$ctrl.engineSchemData.baseStats.power"/>
+        </div>
+    </div>
+    <hr>
+    <!--div style="margin:auto">#Material Units</div-->
+    <div class="engine-schem-editor-row">
+        <div class="ship-schem-editor-comp-group" style="flex-direction: column; padding: 0 10px" ng-repeat="(compName, compData) in $ctrl.engineSchemData.components">
+            #{{compName}}&nbsp;<input ng-change="$ctrl.updateEngineSchem()" type="number" ng-model="compData.matCount"/>
+        </div>
+    </div>
+</div>

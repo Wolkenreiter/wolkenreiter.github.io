@@ -1,0 +1,40 @@
+<div class="material-list">
+    <hr/>
+    <div>
+        <label class="eng-comp-lbl">Base Power
+            <input ng-model="$ctrl.eBasePower"/>
+        </label>
+    </div>
+    <hr/>
+    <div ng-repeat="(compName, compProps) in $ctrl.eComp">
+        <label class="eng-comp-lbl">{{compName}}
+            <input ng-model="compProps.matCnt"/>
+        </label>
+        <label class="eng-mat-lbl" for="sel-mat-{{$index}}">x</label>
+        <select id="sel-mat-{{$index}}" ng-model="compProps.matType"/>
+            <option ng-repeat="(m, v) in $ctrl.powerBoost">{{m}}</option>
+        </select>
+        <label ng-if="compProps.hasQ">Quality
+            <select ng-if="compProps.hasQ" ng-model="compProps.matQ" >
+                <option ng-repeat="q in $ctrl.powerBoost[compProps.matType].comb" value="{{$index}}">{{$index + 1}}</option>
+            </select>
+        </label>
+    </div>
+    <hr/>
+    <div>
+        <label class="eng-comp-lbl">Total Power
+            <input readonly ng-model="$ctrl.getPower()|number:0" />
+        </label>
+    </div>
+    <div>
+        <label class="eng-comp-lbl">Total Mass
+            <input readonly ng-model="$ctrl.getMass()|number:2" />
+        </label>
+    </div>
+    <div>
+        <label class="eng-comp-lbl">Mass Efficiency
+            <input readonly ng-model="($ctrl.getPower() / $ctrl.getMass())|number:2" />
+        </label>
+    </div>
+    <hr/>
+</div>

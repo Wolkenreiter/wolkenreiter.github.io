@@ -1,0 +1,42 @@
+{
+  "name": "js-shortid",
+  "version": "0.1.1",
+  "authors": [
+    "zzzhan <chunzhan.he@gmail.com>"
+  ],
+  "description": "Short id generator. UUID generator. Url-friendly. Non-predictable.",
+  "main": [
+    "dist/js-shortid.js",
+    "dist/js-shortid.min.js"
+  ],
+  "keywords": [
+    "shortid",
+    "uuid",
+    "guid",
+    "client id",
+    "mongoid",
+    "id",
+    "generator",
+    "unique"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zzzhan/js-shortid",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "index.html",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.1",
+    "commit": "bb5d7afc3dfa7670130a55235e0c74217735f366"
+  },
+  "_source": "https://github.com/zzzhan/js-shortid.git",
+  "_target": "0.1.1",
+  "_originalSource": "shortid"
+}
